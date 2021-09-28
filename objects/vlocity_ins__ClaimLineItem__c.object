@@ -1489,11 +1489,6 @@
                     <label>Authority Denied</label>
                 </value>
                 <value>
-                    <fullName>Payment Pending</fullName>
-                    <default>false</default>
-                    <label>Payment Pending</label>
-                </value>
-                <value>
                     <fullName>Paid</fullName>
                     <default>false</default>
                     <label>Paid</label>
@@ -1517,6 +1512,11 @@
                     <fullName>Voided</fullName>
                     <default>false</default>
                     <label>Voided</label>
+                </value>
+                <value>
+                    <fullName>Payment Pending</fullName>
+                    <default>false</default>
+                    <label>Payment Pending</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -1595,6 +1595,14 @@
         <picklistValues>
             <picklist>vlocity_ins__Status__c</picklist>
             <values>
+                <fullName>Authority Denied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Closed W%2FO Pay</fullName>
                 <default>false</default>
             </values>
@@ -1612,6 +1620,18 @@
             </values>
             <values>
                 <fullName>Payment Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending Authority</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stopped</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Voided</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -1669,10 +1689,6 @@
             </values>
             <values>
                 <fullName>Paid</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Payment Pending</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
