@@ -32,13 +32,13 @@
         <label>Active</label>
     </standardValue>
     <standardValue>
-        <fullName>Pending Lapse</fullName>
-        <default>false</default>
-        <label>Pending Lapse</label>
-    </standardValue>
-    <standardValue>
         <fullName>Lapsed</fullName>
         <default>false</default>
         <label>Lapsed</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending Lapse</fullName>
+        <default>false</default>
+        <label>Pending Lapse</label>
     </standardValue>
 </StandardValueSet>
