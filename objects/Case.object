@@ -197,6 +197,38 @@
         <type>Default</type>
     </actionOverrides>
     <businessProcesses>
+        <fullName>HealthCloudGA__CareGap</fullName>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Escalated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+    </businessProcesses>
+    <businessProcesses>
+        <fullName>HealthCloudGA__Healthcare</fullName>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Escalated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+    </businessProcesses>
+    <businessProcesses>
         <fullName>vlocity_ins__Vlocity Support Process</fullName>
         <description>Vlocity Support Process</description>
         <isActive>true</isActive>
@@ -220,6 +252,41 @@
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>true</enableFeeds>
     <externalSharingModel>Private</externalSharingModel>
+    <fieldSets>
+        <fullName>HealthCloudGA__HcCareGapList</fullName>
+        <description>Care Gap List view</description>
+        <displayedFields>
+            <field>HealthCloudGA__SortOrder__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Subject</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Status</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>HealthCloudGA__DueDate__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>HealthCloudGA__SourceSystem__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>OwnerId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>HcCareGapList</label>
+    </fieldSets>
     <fieldSets>
         <fullName>vlocity_ins__StoryFieldSet</fullName>
         <description>Story board</description>
@@ -363,6 +430,139 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>HealthCloudGA__DueDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Date by when this care gap should be closed.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date by when this care gap should be closed.</inlineHelpText>
+        <label>Due Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>HealthCloudGA__FinancialValue__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Potential savings by closing this care gap.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Potential savings by closing this care gap.</inlineHelpText>
+        <label>Financial Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HealthCloudGA__SortOrder__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Rank by which this care gap is sorted.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Rank by which this care gap is sorted.</inlineHelpText>
+        <label>Sort Order</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HealthCloudGA__SourceAgencyMeasureID__c</fullName>
+        <deprecated>false</deprecated>
+        <description>ID of the source agency&apos;s measure for this care gap.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>ID of the source agency&apos;s measure for this care gap.</inlineHelpText>
+        <label>Source Agency Measure ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HealthCloudGA__SourceAgencyMeasureVersion__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Version of the source agency&apos;s ID measure for this care gap.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Version of the source agency&apos;s ID measure for this care gap.</inlineHelpText>
+        <label>Source Agency Measure Version</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HealthCloudGA__SourceAgency__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Agency that identified the care gap.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Agency that identified the care gap.</inlineHelpText>
+        <label>Source Agency</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HealthCloudGA__SourceSystemID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>Record ID in the source system.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Record ID in the source system.</inlineHelpText>
+        <label>Source System ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>HealthCloudGA__SourceSystemModified__c</fullName>
+        <deprecated>false</deprecated>
+        <description>When last updated.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>When last updated.</inlineHelpText>
+        <label>Source System Modified</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>HealthCloudGA__SourceSystem__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of the system where this care gap was identified.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of the system where this care gap was identified.</inlineHelpText>
+        <label>Source System</label>
+        <length>64</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>IsClosedOnCreate</fullName>
@@ -823,6 +1023,188 @@
     <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
     <recordTypeTrackHistory>true</recordTypeTrackHistory>
     <recordTypes>
+        <fullName>HealthCloudGA__CareGap</fullName>
+        <active>true</active>
+        <businessProcess>HealthCloudGA__CareGap</businessProcess>
+        <description>Defines a care gap for an individual</description>
+        <label>CareGap</label>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Feature Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Question</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__Product__c</picklist>
+            <values>
+                <fullName>GC1020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC1040</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC1060</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC3020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC3040</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC3060</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC5020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC5040</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC5060</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>HealthCloudGA__CarePlan</fullName>
+        <active>true</active>
+        <businessProcess>HealthCloudGA__Healthcare</businessProcess>
+        <description>Defines a care plan for an individual and their care team</description>
+        <label>CarePlan</label>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Feature Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Question</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__Product__c</picklist>
+            <values>
+                <fullName>GC1020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC1040</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC1060</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC3020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC3040</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC3060</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC5020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC5040</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC5060</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
         <fullName>vlocity_ins__MobilePhoneCase</fullName>
         <active>true</active>
         <businessProcess>vlocity_ins__Vlocity Support Process</businessProcess>
@@ -958,6 +1340,17 @@
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWriteTransfer</sharingModel>
+    <webLinks>
+        <fullName>HealthCloudGA__Apply_Care_Plan_Templates</fullName>
+        <availability>online</availability>
+        <description>Apply Care Plan Templates</description>
+        <displayType>button</displayType>
+        <linkType>page</linkType>
+        <masterLabel>Apply Care Plan Templates</masterLabel>
+        <openType>replace</openType>
+        <page>HealthCloudGA__HcApplyCarePlanTemplate</page>
+        <protected>false</protected>
+    </webLinks>
     <webLinks>
         <fullName>TIMBASURVEYS__Send_Survey_Case</fullName>
         <availability>online</availability>

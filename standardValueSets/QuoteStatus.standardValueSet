@@ -49,10 +49,4 @@
         <label>Denied</label>
         <allowEmail>true</allowEmail>
     </standardValue>
-    <standardValue>
-        <fullName>Issued</fullName>
-        <default>false</default>
-        <label>Issued</label>
-        <allowEmail>false</allowEmail>
-    </standardValue>
 </StandardValueSet>

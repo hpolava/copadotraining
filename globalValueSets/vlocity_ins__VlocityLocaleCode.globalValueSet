@@ -21,12 +21,6 @@
         <label>German</label>
     </customValue>
     <customValue>
-        <fullName>no</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>Norwegian</label>
-    </customValue>
-    <customValue>
         <fullName>pt_BR</fullName>
         <default>false</default>
         <isActive>false</isActive>
@@ -73,6 +67,12 @@
         <default>false</default>
         <isActive>false</isActive>
         <label>Chinese (Simplified)</label>
+    </customValue>
+    <customValue>
+        <fullName>no</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Norwegian</label>
     </customValue>
     <customValue>
         <fullName>nl_NL</fullName>
