@@ -145,6 +145,18 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>HealthCloudGA__Monitoring_Duration_Days__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Monitoring Duration Days</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Name</fullName>
         <trackHistory>false</trackHistory>
     </fields>

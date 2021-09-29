@@ -15,31 +15,6 @@
             <start>132.0.0.0</start>
         </ipRanges>
         <ipRanges>
-            <description>Copado</description>
-            <end>54.175.230.252</end>
-            <start>54.175.230.252</start>
-        </ipRanges>
-        <ipRanges>
-            <description>Copado</description>
-            <end>54.173.229.200</end>
-            <start>54.173.229.200</start>
-        </ipRanges>
-        <ipRanges>
-            <description>Copado</description>
-            <end>54.88.136.216</end>
-            <start>54.88.136.216</start>
-        </ipRanges>
-        <ipRanges>
-            <description>Copado</description>
-            <end>35.174.57.133</end>
-            <start>35.174.57.133</start>
-        </ipRanges>
-        <ipRanges>
-            <description>Copado</description>
-            <end>18.233.58.2</end>
-            <start>18.233.58.2</start>
-        </ipRanges>
-        <ipRanges>
             <end>1.255.255.255</end>
             <start>0.0.0.0</start>
         </ipRanges>
@@ -95,7 +70,7 @@
         <useLocalStorageForLogoutUrl>false</useLocalStorageForLogoutUrl>
     </sessionSettings>
     <singleSignOnSettings>
-        <enableCaseInsensitiveFederationID>false</enableCaseInsensitiveFederationID>
+        <enableCaseInsensitiveFederationID>true</enableCaseInsensitiveFederationID>
         <enableMultipleSamlConfigs>true</enableMultipleSamlConfigs>
         <enableSamlJitProvisioning>false</enableSamlJitProvisioning>
         <enableSamlLogin>false</enableSamlLogin>

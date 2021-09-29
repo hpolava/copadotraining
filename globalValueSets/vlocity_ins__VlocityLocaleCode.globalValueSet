@@ -21,12 +21,6 @@
         <label>German</label>
     </customValue>
     <customValue>
-        <fullName>no</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>Norwegian</label>
-    </customValue>
-    <customValue>
         <fullName>pt_BR</fullName>
         <default>false</default>
         <isActive>false</isActive>
@@ -75,6 +69,18 @@
         <label>Chinese (Simplified)</label>
     </customValue>
     <customValue>
+        <fullName>it</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Italian</label>
+    </customValue>
+    <customValue>
+        <fullName>no</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Norwegian</label>
+    </customValue>
+    <customValue>
         <fullName>nl_NL</fullName>
         <default>false</default>
         <isActive>false</isActive>
@@ -87,22 +93,16 @@
         <label>Korean</label>
     </customValue>
     <customValue>
-        <fullName>ja</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>Japanese</label>
-    </customValue>
-    <customValue>
         <fullName>es_MX</fullName>
         <default>false</default>
         <isActive>false</isActive>
         <label>Spanish (Mexico)</label>
     </customValue>
     <customValue>
-        <fullName>it</fullName>
+        <fullName>ja</fullName>
         <default>false</default>
         <isActive>false</isActive>
-        <label>Italian</label>
+        <label>Japanese</label>
     </customValue>
     <description>This picklist stores all possible locale code for translation.</description>
     <masterLabel>Vlocity Locale Code</masterLabel>
